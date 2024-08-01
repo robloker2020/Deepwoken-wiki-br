@@ -38,9 +38,11 @@ header{
 }
 
 header > h1{
+
     color: var(--cor0);
     text-align: center;
-    width: 376px;
+    min-width: 200px;
+    max-width: 376px;
     border-radius: 5px;
     margin: auto;
     background-color: var(--cor4);
@@ -73,7 +75,7 @@ main {
     background-color: var(--cor3);
     margin: auto;
     margin-top: 40px;
-    min-width: 320px;
+    min-width: 200px;
     max-width: 1000px;
     border-radius: 10px;
     box-shadow: -1px 1px 8px 1px;
