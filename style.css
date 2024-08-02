@@ -12,7 +12,7 @@
     --cor0: #F2F2F2;
     --cor1: #BFBFBF;
     --cor2: #8C8C8C;
-    --cor3: #404040;
+    --cor3: #383838;
     --cor4: #151515;
 
     --fonte-padrao: 'Rubik', Verdana, Helvetica, sans-serif;
@@ -26,6 +26,10 @@
 
 body{
     background-color: var(--cor2);
+    background-image: url('fotos/Mapa.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 header{ 
@@ -92,7 +96,7 @@ main > article > h2{
 main> article > p{
     text-align: justify;
     line-height: 31px;
-    padding: 20px;
+    padding: 30px;
     font-family: var(--fonte-padrao);
     color: white
 }
@@ -100,7 +104,7 @@ main> article > p{
 main> article > img{
     display: block;
     margin: auto;
-    width: 90%;
+    width: 70%;
     padding: 0px 0px 30px 0px;
     margin-bottom: 20px;
 }
