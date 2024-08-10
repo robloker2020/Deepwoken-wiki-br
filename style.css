@@ -14,6 +14,8 @@
     --cor2: #8C8C8C;
     --cor3: #383838;
     --cor4: #151515;
+    --cor5: #141414;
+    --cor6: #0B0B0B;
 
     --fonte-padrao: 'Rubik', Verdana, Helvetica, sans-serif;
     --fonte-titulo: 'rogue', 'cursive';
@@ -25,17 +27,19 @@
 }
 
 body{
+    min-height: 100vh;
     background-color: var(--cor2);
-    background-image: url('fotos/Mapa.webp');
+    background-image: url('fotos/Fundodeep.png');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: bottom bottom;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 header{ 
     padding: 50px;
     height: 90px;
-    background-image: url('fotos/Roguev4.webp');
+    background-image: url('fotos/HiddenVillage.webp');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,12 +53,12 @@ header > h1{
     max-width: 376px;
     border-radius: 5px;
     margin: auto;
-    background-color: var(--cor4);
+    background-color: var(--cor6);
     font-family: var(--fonte-titulo)
 }
 
 nav{
-    background-color: var(--cor4);
+    background-color: var(--cor6);
     padding: 20px;
     height: 20px;
     box-shadow: 0px 2px 9px 0px;
@@ -70,33 +74,37 @@ nav > a{
 }
 
 nav >a:hover{
+    cursor: pointer;
     color:  #D9AE00;
     font-size: 19px;
-    transition-duration: 0.1s;
+    transition-duration: 0.2s;
 }
 
 main {
-    background-color: var(--cor3);
     margin: auto;
     margin-top: 40px;
     min-width: 200px;
     max-width: 1000px;
+}
+
+main > article {
+    background-color: var(--cor5);
     border-radius: 10px;
     box-shadow: -1px 1px 8px 1px;
 }
 
 main > article > h2{
     text-align: center;
-    background-color: var(--cor4);
+    background-color: var(--cor6);
     color: white;
     padding: 10px;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 9px 9px 0px 0px;
 }
 
 main> article > p{
     text-align: justify;
-    line-height: 31px;
-    padding: 30px;
+    line-height: 29px;
+    padding: 35px 70px 44px 70px;
     font-family: var(--fonte-padrao);
     color: white
 }
